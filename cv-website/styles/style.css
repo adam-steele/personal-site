@@ -1,0 +1,170 @@
+
+body {
+    
+
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color2: hsla(3, 42%, 80%, 0.7);
+    --color1: hsla(0, 0%, 0%, 1);
+    --color3: hsla(187, 43%, 30%, 1);
+    --color4: hsla(192, 76%, 75%, 1);
+    --color5: #ffffff;
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: calc(var(--footer-height));
+
+    /*display: grid;
+    grid-template-columns: 0.5fr 1fr;*/
+}
+
+section {
+    /*background-color: var(--color5);*/
+    width: 1000px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+    /*border: solid 2px var(--color1);*/
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+.main-logo {
+    animation: pulse 5s infinite ease-in-out;
+}
+
+header img {
+    height: var(--header-height);
+}
+
+
+
+content {
+    width: 90%;
+}
+
+p {
+    margin: var(--gutter);
+}
+  
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+    color: var(--color5);
+}
+  
+  @keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }
+
+  #welcome {
+      background-color: var(--color3);
+      font-size: 1.5rem;
+      color: var(--color5);
+      opacity: 100%;
+      text-align: center;
+      margin: auto auto auto 0 ;
+      padding: 10px 20px;
+  }
+
+  hr{
+      background-color: var(--color3);
+      height: 5px;
+  }
+
+  .about-me{
+      padding: 5%;
+      margin: auto;
+      vertical-align: middle;
+    
+  }
+
+  .intro-image{
+    flex-shrink: 5;
+  }
+
+  #me2{
+    z-index: 0;
+    max-width: 350px;
+    margin: 0;
+    box-shadow: 5px 2px 4px rgb(48, 47, 47);
+ }
+ 
+ #about-title{
+     align-self: flex-start;
+    margin-left: 5%;
+    padding-bottom: 20px;
+ }
+
+ #person-icon{
+     text-shadow: 2px 2px 4px rgb(48, 47, 47);
+ }
+ 
+ .profile{
+     padding: 5px;
+     font-size: 1.2rem;
+ }
+
+ .profile > p{
+    padding: 10px;
+    font-size: 1.2rem;
+}
