@@ -27,5 +27,23 @@ a:hover{
     padding: 2px;
 }
 
+#responsive-menu{
+    display: none;
+}
 
+
+
+@media screen and (max-width: 600px) {
+
+    .logo > .material-icons, p{
+        display: none;
+    }
+
+
+    #responsive-menu{display: flex;
+        padding: 5px;
+        margin: auto 2%;
+    }
+
+  }
 

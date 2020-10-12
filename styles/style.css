@@ -168,3 +168,28 @@ footer {
     padding: 10px;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 600px){
+ 
+    #home {
+        /*background-color: var(--color5);*/
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /*border: solid 2px var(--color1);*/
+    }
+
+  
+
+}
+
+.responsive{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

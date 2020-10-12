@@ -5,11 +5,13 @@
 // set event listeners to update state and DOM
 'use strict';
 
-//const app = {
- //   aboutMeImg: document.getElementById('me2'),
-  //  headerName: document.getElementById('welcome'),
+const app = {
+    aboutMeImg: document.getElementById('me2'),
+    headerName: document.getElementById('welcome'),
+    responsiveMenu: document.getElementById("responsive-menu"),
+    topNav: document.getElementsByTagName("a"),
 
-//};
+};
 
 
 var TxtRotate = function(el, toRotate, period) {
@@ -69,3 +71,15 @@ window.onload = function() {
     document.body.appendChild(css);
 };
   
+
+
+function myFunction() {
+    
+    if ( app.topNav.className === "logo") {
+        app.topNav.className += " responsive";
+    } //else {
+      
+    //}
+  }
+
+  app.responsiveMenu.onclick = myFunction;
