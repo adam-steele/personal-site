@@ -35,7 +35,7 @@ a:hover{
 
 @media screen and (max-width: 600px) {
 
-    .logo > .material-icons, p{
+    .logo > .material-icons > p{
         display: none;
     }
 
