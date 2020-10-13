@@ -220,6 +220,7 @@ footer {
     width: 100%;
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
+    box-shadow: var(--shadow);
  }
  .js, .html, .css, .sql {
     text-align: center;
