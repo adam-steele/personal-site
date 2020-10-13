@@ -192,9 +192,9 @@ footer {
 
 @media only screen and (max-width: 600px){
  
-    #home {
+    article {
         /*background-color: var(--color5);*/
-        max-width: 80%;
+        max-width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
