@@ -18,9 +18,20 @@ body {
     background-color: var(--color2);
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: calc(var(--footer-height));
+
+    /*display: grid;
+    grid-template-columns: 0.5fr 1fr;*/
+}
+
+
 #home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: calc(var(--footer-height));
 
@@ -40,6 +51,15 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     /*border: solid 2px var(--color1);*/
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: calc(var(--footer-height));
+
+    box-shadow: var(--shadow) ;
 }
 
 header {
@@ -155,8 +175,9 @@ footer {
     padding-bottom: 20px;
  }
 
- #person-icon{
+ .material-icons{
      text-shadow: 2px 2px 4px rgb(48, 47, 47);
+     font-size: 30px;
  }
  
  .profile{
@@ -193,3 +214,46 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+
+.container {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+ }
+ .js, .html, .css, .sql {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    background-color: var(--color3);
+    border-radius: 20px;
+ }
+ .js {
+    width: 60%;
+}
+    
+ .css {
+    width: 80%;
+   
+ }
+ .html {
+    width: 75%;
+    
+ }
+ .sql {
+    width: 40%;
+ }
+
+ #skills > h3, h2
+ {
+    font-weight: bold;
+    padding: 5px 0px;
+    margin: auto auto auto 10px;
+ }
+
+ #skills
+ {
+  margin: auto;  
+ }
