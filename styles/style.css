@@ -58,7 +58,8 @@ article {
     flex-direction: row;
     justify-content: center;
     margin-bottom: calc(var(--footer-height));
-
+    margin: auto;
+    max-width: 90%;
     box-shadow: var(--shadow) ;
 }
 
@@ -97,7 +98,7 @@ header img {
 
 
 
-content {
+.profile {
     width: 90%;
 }
 
@@ -146,10 +147,7 @@ footer {
       padding: 10px 20px;
   }
 
-  hr{
-      background-color: var(--color3);
-      height: 5px;
-  }
+  
 
   .about-me{
       padding: 5%;
@@ -178,6 +176,7 @@ footer {
  .material-icons{
      text-shadow: 2px 2px 4px rgb(48, 47, 47);
      font-size: 30px;
+     margin: auto 0;
  }
  
  .profile{
@@ -190,22 +189,7 @@ footer {
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 600px){
- 
-    article {
-        /*background-color: var(--color5);*/
-        max-width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        /*border: solid 2px var(--color1);*/
-    }
 
-  
-
-}
 
 .responsive{
     position: absolute;
@@ -221,6 +205,7 @@ footer {
     background-color: rgb(231, 231, 231);
     border-radius: 20px;
     box-shadow: var(--shadow);
+    margin: auto 10px;
  }
  .js, .html, .css, .sql {
     text-align: center;
@@ -247,14 +232,142 @@ footer {
     width: 40%;
  }
 
- #skills > h3, h2
+ .bar-captions
  {
-    font-weight: bold;
-    padding: 5px 0px;
-    margin: auto auto auto 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    margin: auto auto 3px 20px;
  }
 
- #skills
- {
-  margin: auto;  
- }
+audio{
+
+    margin: 0 25% 0 25%;}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+}
+
+#skills-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: calc(var(--footer-height));
+    margin: auto;
+    max-width: 100%;
+}
+
+#skills-para, #skills-bars, #skills-list{
+    padding-top: 2%;
+    margin:0;
+    padding: 0 20px;
+}
+
+#skills-title{
+    width: 100%;
+    padding: 0 0 5px 0;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+}
+
+#skills-para{
+    padding: 5% 5px 0 0;
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+
+#skills-list{
+    padding: 3% 0 0 0;
+    max-width: 20%;
+    margin-left: 50px;
+    display: block;
+    font-size: 1.3rem;
+}
+
+#skills-bars{
+    max-width: 50%;
+}
+
+ul {
+    list-style-type: disc ;
+    list-style-position: outside;
+
+}
+
+.exp-ul{
+    margin:20px 0;
+    font-size: 1.1rem;
+}
+
+.exp-ul > li {
+    color: var(--color3);
+    margin: 10px;
+}
+
+.li-span{
+    color: black;
+}
+
+hr{
+    background-color: var(--color3);
+    height: 5px;
+    display: block;
+}
+
+ #hr{
+     margin: 0;
+     padding: 0;
+    
+}
+
+h4{
+    margin: auto 0;
+    font-size: 1.1rem;
+    border: 5px solid var(--color3) ;
+    padding: 2px;
+
+}
+
+.curr-exp-subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+.experience-title{
+    margin: 20px 0 0 0;
+}
+
+
+@media only screen and (max-width: 600px){
+ 
+    article, #skills-contain {
+        /*background-color: var(--color5);*/
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /*border: solid 2px var(--color1);*/
+    }
+
+    #skills-bars, #skills-list{
+        max-width: 80%;
+        padding: 20px 0;
+    }
+
+    .experience{
+        padding: 0;
+    }
+
+}
