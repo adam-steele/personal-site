@@ -347,6 +347,11 @@ h4{
     margin: 20px 0 0 0;
 }
 
+.respon-hr{
+    display: none;
+    width:100%;
+    
+}
 
 @media only screen and (max-width: 600px){
  
@@ -369,5 +374,13 @@ h4{
     .experience{
         padding: 0;
     }
+
+    .respon-hr{
+        display: block;
+    }
+
+    #me2{
+        max-width: 50%;
+     }
 
 }
