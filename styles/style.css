@@ -380,7 +380,11 @@ h4{
     }
 
     #me2{
-        max-width: 50%;
+        max-width: 60%;
+     }
+
+     section{
+         margin: 0 auto;
      }
 
 }
