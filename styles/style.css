@@ -244,7 +244,7 @@ audio{
 
     margin: 0 25% 0 25%;}
 
-#skills{
+.one-title-article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +254,7 @@ audio{
     margin-bottom: var(--gutter);
 }
 
-#skills-contain{
+.contain{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -348,15 +348,41 @@ h4{
     
 }
 
+
+
+
 .respon-hr{
     display: none;
     width:100%;
     
 }
 
+
+.edu-subtitle{
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+}
+
+.edu-p{
+text-align: center;
+margin: 20px;
+
+}
+
+#education{
+    min-width: 90%;
+}
+
+#slides{
+    margin: auto 0;
+    min-width: 100%;
+    padding: 0;
+}
+
 @media only screen and (max-width: 600px){
  
-    article, #skills-contain {
+    article, .contain {
         /*background-color: var(--color5);*/
         max-width: 90%;
         display: flex;
