@@ -13,8 +13,7 @@ a:active {
 }
 
 a:hover{
-    color: var(--color4);
-    
+    transform: scale(1.05);
 }
 
 .logo {
