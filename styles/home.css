@@ -30,11 +30,14 @@ a:hover{
     display: none;
 }
 
-
+.links-respon{
+    position: absolute;
+        top: 80px;
+}
 
 @media screen and (max-width: 600px) {
 
-    .logo {
+    .logo{
         display: none;
     }
 

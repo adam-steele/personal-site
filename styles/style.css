@@ -395,11 +395,16 @@ margin: 20px;
     justify-content: center;
 }
 
+.contact-info>a{
+    color: black;
+}
+
 .social-links:hover{
     
     transform : scale(1.05);
     top:-10px;
 }
+
 
 
 @media only screen and (max-width: 600px){
