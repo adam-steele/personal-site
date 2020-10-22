@@ -12,35 +12,27 @@ a:active {
     background-color: var(--color5);
 }
 
-a:hover{
-    transform: scale(1.05);
-}
 
 .logo {
     display: flex;
     flex-direction: row;
 }
 
-.logo > .material-icons, p{
-    margin: auto;
-    padding: 2px;
-}
+
 
 #responsive-menu{
     display: none;
 }
 
-.links-respon{
-    position: absolute;
-        top: 80px;
-}
+
 
 @media screen and (max-width: 600px) {
 
-    .logo{
-        display: none;
+    #nav-links{
+        position: relative;
+        display: block;
+        width: 100%;
     }
-
 
     #responsive-menu{display: flex;
         padding: 5px;

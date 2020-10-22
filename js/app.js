@@ -10,6 +10,8 @@ const app = {
     headerName: document.getElementById('welcome'),
     responsiveMenu: document.getElementById("responsive-menu"),
     topNav: document.getElementsByTagName("a"),
+    navLinks: document.getElementsByClassName('links-respond'),
+    navLinksRes: document.getElementsByClassName('links-responded'),
 
 };
 
@@ -71,15 +73,18 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
+const x = [...app.navLinks]
 
-
-function myFunction() {
-
-    if (app.topNav.className === "logo") {
-        app.topNav.className += " responsive";
-    } //else {
-
-    //}
+ const menuShow = function () {
+    
+    x.forEach(element => {
+       
+        if ( element.classList.contains('links-respond') || element.classList.contains('links-responded')){
+            element.classList.toggle('links-respond');
+            element.classList.toggle('links-responded');
+        }
+    });
 }
 
-app.responsiveMenu.onclick = myFunction;
+
+app.responsiveMenu.onclick = menuShow;
