@@ -54,11 +54,11 @@
     z-index: 2;
     font-size: 40px;
     text-decoration: none;
-    left: -23px;
+    left: +10px;
     border: 0;
-    top: 30%;
+    top: 10%;
     cursor: pointer;
-    color: #666;
+    color: rgb(32, 75, 80);
     opacity: 1;
     line-height: 1;
     transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
@@ -68,16 +68,16 @@
   .glider-next:hover,
   .glider-prev:focus,
   .glider-next:focus {
-    color: #a89cc8;
+    color: hsla(187, 43%, 30%, 1);
   }
   .glider-next {
-    right: -23px;
+    right: +10px;
     left: auto;
   }
   .glider-next.disabled,
   .glider-prev.disabled {
     opacity: .25;
-    color: #666;
+    color: rgb(32, 75, 80);
     cursor: default;
   }
   .glider-slide {
