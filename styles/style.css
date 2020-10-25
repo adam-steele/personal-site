@@ -119,24 +119,7 @@ footer {
     color: var(--color5);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
 
   #welcome {
       background-color: var(--color3);
@@ -216,22 +199,9 @@ footer {
     color: white;
     background-color: var(--color3);
     border-radius: 20px;
+    width: 0%;
  }
- .js {
-    width: 60%;
-}
-    
- .css {
-    width: 80%;
-   
- }
- .html {
-    width: 75%;
-    
- }
- .sql {
-    width: 50%;
- }
+ 
 
  .bar-captions
  {

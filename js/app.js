@@ -88,3 +88,39 @@ const x = [...app.navLinks]
 
 
 app.responsiveMenu.onclick = menuShow;
+
+
+const animate = function (params) {
+    
+}
+
+const options = {
+	root: null, // use the document's viewport as the container
+	rootMargin: '0px', // % or px - offsets added to each side of the intersection 
+	threshold: 0.9 // percentage of the target element which is visible
+}
+
+let callback = (entries) => { 
+	entries.forEach(entry => {
+		
+		// If entry (box) is visible - according with the params set in `options`
+		// then adds `isVisible` class to box
+		// otherwise removes `isVisible` class
+		if(entry.isIntersecting) {
+                jQuery('.container').each(function(){
+                jQuery(this).find('.bar').animate({
+                  width:jQuery(this).attr('data-percent')
+                },6000);
+              });
+            }
+
+	});
+}
+
+// Create the intersection observer instance by calling its constructor and passing it a
+// callback function to be run whenever a threshold is crossed in one direction or the other:
+let observer = new IntersectionObserver(callback, options);
+
+// Get all the `.bar` from DOM and attach the observer to these
+document.querySelectorAll('.bar')
+	.forEach(bar => { observer.observe(bar) });
