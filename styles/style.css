@@ -171,6 +171,7 @@ footer {
  .profile > p{
     padding: 10px;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 
@@ -300,6 +301,10 @@ hr{
     
 }
 
+.show-mobile{
+    display: none;
+}
+
 h4{
     margin: auto 0;
     font-size: 1.1rem;
@@ -400,7 +405,9 @@ margin: 20px;
 
 
 @media only screen and (max-width: 600px){
- 
+    
+
+
     article, .contain {
         /*background-color: var(--color5);*/
         max-width: 90%;
@@ -415,6 +422,7 @@ margin: 20px;
     .profile > p {
         padding: 0px;
         margin: 0;
+        font-size: 0.9rem;
     }
 
     #skills-bars, #skills-list{
@@ -460,5 +468,12 @@ margin: 20px;
     padding: 3px 3px 3px 10px;
     }
 
+    .li-span, .profile, li{
+        font-size: 0.9rem;
+    }
+
+    .show-mobile{
+        display: block;
+    }
 
 }
